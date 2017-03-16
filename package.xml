@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>automation</name>
+  <name>pepper_automation</name>
   <version>0.0.0</version>
-  <description>The automation package</description>
+  <description>The pepper_automation package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag --> 
   <!-- Example:  -->
