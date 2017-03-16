@@ -1,9 +1,0 @@
-<launch>
-
-<include file="$(find pepper_bringup)/launch/pepper_full.launch" />
-<arg name="map_file" default="$(find automation)/launch/demo_labmap.yaml" />
-<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
-<include file="$(find automation)/launch/amcl_pepper.launch" />
-<include file="$(find automation)/launch/move_base.launch" />
-
-</launch>
