@@ -1,0 +1,11 @@
+<launch>
+
+<include file="$(find pepper_bringup)/launch/pepper_full.launch" >
+<arg name="nao_ip" value="133.19.23.152" />
+</include>
+<arg name="map_file" default="$(find pepper_automation)/launch/demo_labmap.yaml" />
+<node pkg="map_server" type="map_server" name="map_server" args="$(arg map_file)"/>
+<include file="$(find pepper_automation)/launch/amcl_pepper.launch" />
+<include file="$(find pepper_automation)/launch/move_base.launch" />
+
+</launch>
